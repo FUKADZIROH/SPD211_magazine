@@ -26,7 +26,8 @@ namespace SPD211_magazine
         //function to go to the LoginScreen
         public void GoToLoginScreen()
         {
-
+            Form1 loginScreen = new Form1();
+            loginScreen.Show();
         }
     }
 }

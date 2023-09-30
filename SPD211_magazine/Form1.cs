@@ -30,8 +30,8 @@ namespace SPD211_magazine
             {
                 isValid = true;
                 MessageBox.Show("You are logged in as a user!");
+                //GoToUserScreen();            
             }
-            //GoToUserScreen();            
             else if (adminCredentials.ContainsKey(enteredUsername) && adminCredentials[enteredUsername] == enteredPassword)
             {
                 isValid = true;
