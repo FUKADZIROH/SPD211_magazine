@@ -11,17 +11,20 @@ namespace SPD211_magazine
         //function to go to the AdmainScreen
         public void GoToAdmainScreen()
         {
-            
+           /* AdmainScreen admainScreen = new AdmainScreen();
+            admainScreen.Show();*/
         }
         //function to go to the UserScreen
         public void GoToUserScreen()
         {
-
+            /*UserScreen userScreen = new UserScreen();
+             userScreen.Show();*/
         }
         //function to go to the RegisterScreen
         public void GoToRegisterScreen()
         {
-
+            /*RegisterScreen registerScreen = new RegisterScreen();
+             registerScreen.Show();*/
         }
         //function to go to the LoginScreen
         public void GoToLoginScreen()
