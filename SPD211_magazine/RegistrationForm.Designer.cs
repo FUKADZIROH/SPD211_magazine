@@ -39,7 +39,6 @@
             label8 = new Label();
             label9 = new Label();
             bt_AddUser = new Button();
-            button2 = new Button();
             tb_Name = new TextBox();
             tb_Surname = new TextBox();
             tb_Middlename = new TextBox();
@@ -48,7 +47,7 @@
             tb_Email = new TextBox();
             tb_UserLogin = new TextBox();
             tb_UserPassword = new TextBox();
-            tb_UserPasswordCheck = new TextBox();
+            tb_UserPasswordConfirm = new TextBox();
             SuspendLayout();
             // 
             // lb_1
@@ -143,21 +142,13 @@
             // 
             // bt_AddUser
             // 
-            bt_AddUser.Location = new Point(130, 442);
+            bt_AddUser.Location = new Point(130, 431);
             bt_AddUser.Name = "bt_AddUser";
-            bt_AddUser.Size = new Size(293, 47);
+            bt_AddUser.Size = new Size(390, 47);
             bt_AddUser.TabIndex = 11;
             bt_AddUser.Text = "Зареєструватись";
             bt_AddUser.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(623, 442);
-            button2.Name = "button2";
-            button2.Size = new Size(134, 47);
-            button2.TabIndex = 12;
-            button2.Text = "Вхід";
-            button2.UseVisualStyleBackColor = true;
+            bt_AddUser.Click += AddNewUser;
             // 
             // tb_Name
             // 
@@ -215,19 +206,19 @@
             tb_UserPassword.Size = new Size(222, 27);
             tb_UserPassword.TabIndex = 20;
             // 
-            // tb_UserPasswordCheck
+            // tb_UserPasswordConfirm
             // 
-            tb_UserPasswordCheck.Location = new Point(298, 373);
-            tb_UserPasswordCheck.Name = "tb_UserPasswordCheck";
-            tb_UserPasswordCheck.Size = new Size(222, 27);
-            tb_UserPasswordCheck.TabIndex = 21;
+            tb_UserPasswordConfirm.Location = new Point(298, 373);
+            tb_UserPasswordConfirm.Name = "tb_UserPasswordConfirm";
+            tb_UserPasswordConfirm.Size = new Size(222, 27);
+            tb_UserPasswordConfirm.TabIndex = 21;
             // 
             // RegistrationForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(838, 552);
-            Controls.Add(tb_UserPasswordCheck);
+            Controls.Add(tb_UserPasswordConfirm);
             Controls.Add(tb_UserPassword);
             Controls.Add(tb_UserLogin);
             Controls.Add(tb_Email);
@@ -236,7 +227,6 @@
             Controls.Add(tb_Middlename);
             Controls.Add(tb_Surname);
             Controls.Add(tb_Name);
-            Controls.Add(button2);
             Controls.Add(bt_AddUser);
             Controls.Add(label9);
             Controls.Add(label8);
@@ -249,6 +239,7 @@
             Controls.Add(label1);
             Controls.Add(lb_1);
             Name = "RegistrationForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "RegistationScreen";
             ResumeLayout(false);
             PerformLayout();
@@ -267,7 +258,6 @@
         private Label label8;
         private Label label9;
         private Button bt_AddUser;
-        private Button button2;
         private TextBox tb_Name;
         private TextBox tb_Surname;
         private TextBox tb_Middlename;
@@ -276,6 +266,6 @@
         private TextBox tb_Email;
         private TextBox tb_UserLogin;
         private TextBox tb_UserPassword;
-        private TextBox tb_UserPasswordCheck;
+        private TextBox tb_UserPasswordConfirm;
     }
 }
