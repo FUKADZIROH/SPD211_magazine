@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace SPD211_magazine
 {
-    public partial class Form2 : Form
+    public partial class F_Check : Form
     {
-        public Form2()
+        public F_Check()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
