@@ -23,8 +23,8 @@ namespace SPD211_magazine
         //function to go to the RegisterScreen
         public void GoToRegisterScreen()
         {
-            /*RegisterScreen registerScreen = new RegisterScreen();
-             registerScreen.Show();*/
+            RegistrationForm registerScreen = new RegistrationForm();
+            registerScreen.Show();
         }
         //function to go to the LoginScreen
         public void GoToLoginScreen()

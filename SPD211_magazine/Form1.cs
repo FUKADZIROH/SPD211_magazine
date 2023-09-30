@@ -3,6 +3,7 @@ namespace SPD211_magazine
 {
     public partial class Form1 : Form
     {
+        Navigator navigator = new Navigator();
         private Dictionary<string, string> userCredentials = new Dictionary<string, string>
         {
             { "user1", "password1" },
@@ -46,7 +47,7 @@ namespace SPD211_magazine
 
         private void RedisterAnAccount(object sender, EventArgs e)
         {
-            //GoToRegisterScreen();
+            navigator.GoToRegisterScreen();
         }
     }
 }
