@@ -48,6 +48,7 @@
             tb_UserLogin = new TextBox();
             tb_UserPassword = new TextBox();
             tb_UserPasswordConfirm = new TextBox();
+            cb_IsAdmin = new CheckBox();
             SuspendLayout();
             // 
             // lb_1
@@ -142,7 +143,7 @@
             // 
             // bt_AddUser
             // 
-            bt_AddUser.Location = new Point(130, 431);
+            bt_AddUser.Location = new Point(130, 457);
             bt_AddUser.Name = "bt_AddUser";
             bt_AddUser.Size = new Size(390, 47);
             bt_AddUser.TabIndex = 11;
@@ -213,11 +214,22 @@
             tb_UserPasswordConfirm.Size = new Size(222, 27);
             tb_UserPasswordConfirm.TabIndex = 21;
             // 
+            // cb_IsAdmin
+            // 
+            cb_IsAdmin.AutoSize = true;
+            cb_IsAdmin.Location = new Point(138, 417);
+            cb_IsAdmin.Name = "cb_IsAdmin";
+            cb_IsAdmin.Size = new Size(84, 24);
+            cb_IsAdmin.TabIndex = 22;
+            cb_IsAdmin.Text = "Я адмін";
+            cb_IsAdmin.UseVisualStyleBackColor = true;
+            // 
             // RegistrationForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(838, 552);
+            Controls.Add(cb_IsAdmin);
             Controls.Add(tb_UserPasswordConfirm);
             Controls.Add(tb_UserPassword);
             Controls.Add(tb_UserLogin);
@@ -267,5 +279,6 @@
         private TextBox tb_UserLogin;
         private TextBox tb_UserPassword;
         private TextBox tb_UserPasswordConfirm;
+        private CheckBox cb_IsAdmin;
     }
 }

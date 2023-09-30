@@ -29,10 +29,12 @@ namespace SPD211_magazine
             string enteredUserLogin = tb_UserLogin.Text;
             string enteredPassword = tb_UserPassword.Text;
             string enteredPassword2 = tb_UserPasswordConfirm.Text;
+            bool isAdmin = cb_IsAdmin.Checked; 
 
             if (enteredPassword == enteredPassword2)
             {
-                user = new User(enteredUsername, enteredSurname, enteredMiddlename, enteredAge, enteredPhoneNumber, enteredEmail, enteredUserLogin, enteredPassword);
+                user = new User(enteredUsername, enteredSurname, enteredMiddlename, enteredAge, enteredPhoneNumber, enteredEmail, enteredUserLogin, enteredPassword, isAdmin);
+                Form1.registeredUsers.Add(user);
                 MessageBox.Show(user.ToString(), "Зареєстровано нового юзера", MessageBoxButtons.OK);
                 this.Close();
             }
@@ -41,9 +43,6 @@ namespace SPD211_magazine
                 MessageBox.Show("Паролі не співпадають");
             }
         }
-
-
-
 
     }
 }
