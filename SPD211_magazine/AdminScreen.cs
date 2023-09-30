@@ -37,7 +37,15 @@ namespace SPD211_magazine
 
         private void ChangeGoodsClick(object sender, EventArgs e)
         {
-
+            int index = lb_goods.SelectedIndex;
+            ChangeScreen changeScreen = new ChangeScreen();
+            changeScreen.StartPosition = FormStartPosition.CenterScreen;
+            var rs = changeScreen.ShowDialog();
+            if (rs == DialogResult.OK)
+            {
+                lb_goods.Items.RemoveAt(index);
+                lb_goods.Items.Insert(index, changeScreen.good2);
+            }
         }
     }
 }
