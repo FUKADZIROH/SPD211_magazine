@@ -20,7 +20,24 @@ namespace SPD211_magazine
         private void AddGoods(object sender, EventArgs e)
         {
             AddingGoods addinggoods = new AddingGoods();
-            addinggoods.ShowDialog();
+            addinggoods.StartPosition = FormStartPosition.CenterScreen;
+            var res = addinggoods.ShowDialog();
+            if (res == DialogResult.OK)
+            {
+                lb_goods.Items.Add(addinggoods.good);
+            }
+
+        }
+
+        private void RemoveClick(object sender, EventArgs e)
+        {
+            int index = lb_goods.SelectedIndex;
+            lb_goods.Items.RemoveAt(index);
+        }
+
+        private void ChangeGoodsClick(object sender, EventArgs e)
+        {
+
         }
     }
 }

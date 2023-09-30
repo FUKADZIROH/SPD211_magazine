@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             gb_adminTools = new GroupBox();
-            addGoods = new Button();
-            removeGoods = new Button();
             changeGoods = new Button();
+            removeGoods = new Button();
+            addGoods = new Button();
             lb_goods = new ListBox();
             gb_adminTools.SuspendLayout();
             SuspendLayout();
@@ -48,15 +48,15 @@
             gb_adminTools.TabStop = false;
             gb_adminTools.Text = "Інструменти";
             // 
-            // addGoods
+            // changeGoods
             // 
-            addGoods.Location = new Point(17, 22);
-            addGoods.Name = "addGoods";
-            addGoods.Size = new Size(322, 44);
-            addGoods.TabIndex = 0;
-            addGoods.Text = "Додати товар";
-            addGoods.UseVisualStyleBackColor = true;
-            addGoods.Click += AddGoods;
+            changeGoods.Location = new Point(17, 143);
+            changeGoods.Name = "changeGoods";
+            changeGoods.Size = new Size(322, 44);
+            changeGoods.TabIndex = 2;
+            changeGoods.Text = "Змінити товар";
+            changeGoods.UseVisualStyleBackColor = true;
+            changeGoods.Click += ChangeGoodsClick;
             // 
             // removeGoods
             // 
@@ -66,15 +66,17 @@
             removeGoods.TabIndex = 1;
             removeGoods.Text = "Видалити товар";
             removeGoods.UseVisualStyleBackColor = true;
+            removeGoods.Click += RemoveClick;
             // 
-            // changeGoods
+            // addGoods
             // 
-            changeGoods.Location = new Point(17, 143);
-            changeGoods.Name = "changeGoods";
-            changeGoods.Size = new Size(322, 44);
-            changeGoods.TabIndex = 2;
-            changeGoods.Text = "Змінити товар";
-            changeGoods.UseVisualStyleBackColor = true;
+            addGoods.Location = new Point(17, 22);
+            addGoods.Name = "addGoods";
+            addGoods.Size = new Size(322, 44);
+            addGoods.TabIndex = 0;
+            addGoods.Text = "Додати товар";
+            addGoods.UseVisualStyleBackColor = true;
+            addGoods.Click += AddGoods;
             // 
             // lb_goods
             // 

@@ -28,28 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            l_number = new Label();
             l3 = new Label();
             tb_goodsName = new TextBox();
             l_goodName = new Label();
-            tb_number = new TextBox();
             tb_price = new TextBox();
-            Add = new Button();
+            add_ = new Button();
             SuspendLayout();
-            // 
-            // l_number
-            // 
-            l_number.AutoSize = true;
-            l_number.Location = new Point(38, 60);
-            l_number.Name = "l_number";
-            l_number.Size = new Size(56, 15);
-            l_number.TabIndex = 1;
-            l_number.Text = "Кількість";
             // 
             // l3
             // 
             l3.AutoSize = true;
-            l3.Location = new Point(22, 92);
+            l3.Location = new Point(22, 65);
             l3.Name = "l3";
             l3.Size = new Size(72, 15);
             l3.TabIndex = 3;
@@ -71,41 +60,33 @@
             l_goodName.TabIndex = 6;
             l_goodName.Text = "Назва товару";
             // 
-            // tb_number
-            // 
-            tb_number.Location = new Point(107, 57);
-            tb_number.Name = "tb_number";
-            tb_number.Size = new Size(164, 23);
-            tb_number.TabIndex = 7;
-            // 
             // tb_price
             // 
-            tb_price.Location = new Point(107, 89);
+            tb_price.Location = new Point(107, 62);
             tb_price.Name = "tb_price";
             tb_price.Size = new Size(164, 23);
             tb_price.TabIndex = 8;
             // 
-            // Add
+            // add_
             // 
-            Add.Location = new Point(22, 125);
-            Add.Name = "Add";
-            Add.Size = new Size(249, 41);
-            Add.TabIndex = 9;
-            Add.Text = "Додати товар";
-            Add.UseVisualStyleBackColor = true;
+            add_.Location = new Point(22, 102);
+            add_.Name = "add_";
+            add_.Size = new Size(249, 42);
+            add_.TabIndex = 9;
+            add_.Text = "Додати товар";
+            add_.UseVisualStyleBackColor = true;
+            add_.Click += adding;
             // 
             // AddingGoods
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(303, 191);
-            Controls.Add(Add);
+            ClientSize = new Size(303, 162);
+            Controls.Add(add_);
             Controls.Add(tb_price);
-            Controls.Add(tb_number);
             Controls.Add(l_goodName);
             Controls.Add(tb_goodsName);
             Controls.Add(l3);
-            Controls.Add(l_number);
             Name = "AddingGoods";
             Text = "AddingGoods";
             ResumeLayout(false);
@@ -113,12 +94,11 @@
         }
 
         #endregion
-        private Label l_number;
         private Label l3;
         private TextBox tb_goodsName;
         private Label l_goodName;
-        private TextBox tb_number;
         private TextBox tb_price;
         private Button Add;
+        private Button add_;
     }
 }
