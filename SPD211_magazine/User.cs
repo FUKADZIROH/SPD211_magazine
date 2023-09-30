@@ -16,8 +16,9 @@ namespace SPD211_magazine
         public string Email { get; set; }
         public string UserLogin { get; set; }
         public string UserPassword { get; set; }
+        public bool IsAdmin { get; set; }
 
-        public User(string name, string surname, string middlename, int age, string phoneNumber, string email, string userLogin, string userPassword)
+        public User(string name, string surname, string middlename, int age, string phoneNumber, string email, string userLogin, string userPassword, bool isAdmin)
         {
             Name = name;
             Surname = surname;
@@ -27,9 +28,8 @@ namespace SPD211_magazine
             Email = email;
             UserLogin = userLogin;
             UserPassword = userPassword;
+            IsAdmin = isAdmin;
         }
-
-       
 
         public override string ToString()
         {

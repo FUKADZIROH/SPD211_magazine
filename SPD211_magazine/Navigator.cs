@@ -6,28 +6,28 @@ using System.Threading.Tasks;
 
 namespace SPD211_magazine
 {
-    public class Navigator
+    public static class Navigator
     {
         //function to go to the AdmainScreen
-        public void GoToAdmainScreen()
+        public static void GoToAdminScreen()
         {
-           /* AdmainScreen admainScreen = new AdmainScreen();
-            admainScreen.Show();*/
+           /* AdminScreen admainScreen = new AdminScreen();
+            adminScreen.Show();*/
         }
         //function to go to the UserScreen
-        public void GoToUserScreen()
+        public static void GoToUserScreen()
         {
             /*UserScreen userScreen = new UserScreen();
              userScreen.Show();*/
         }
         //function to go to the RegisterScreen
-        public void GoToRegisterScreen()
+        public static void GoToRegisterScreen()
         {
             RegistrationForm registerScreen = new RegistrationForm();
             registerScreen.Show();
         }
         //function to go to the LoginScreen
-        public void GoToLoginScreen()
+        public static void GoToLoginScreen()
         {
             Form1 loginScreen = new Form1();
             loginScreen.Show();
